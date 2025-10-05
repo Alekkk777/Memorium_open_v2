@@ -1,0 +1,95 @@
+{
+  "version": "2.0.0",
+  "lastUpdated": "2025-01-15T10:00:00.000Z",
+  "palaces": [
+    {
+      "id": "demo_palace_1",
+      "name": "Demo: Palazzo della Chimica",
+      "description": "Un palazzo di esempio per imparare le basi della chimica organica",
+      "createdAt": "2025-01-15T10:00:00.000Z",
+      "updatedAt": "2025-01-15T10:00:00.000Z",
+      "images": [
+        {
+          "id": "demo_img_1",
+          "name": "Laboratorio",
+          "fileName": "lab-360.jpg",
+          "width": 4096,
+          "height": 2048,
+          "is360": true,
+          "annotations": [
+            {
+              "id": "demo_ann_1",
+              "text": "Glucosio C6H12O6",
+              "note": "Immagina un anello di 6 biscotti dorati (atomi di carbonio) con caramelle rosse al centro (ossigeni) e fili di zucchero argentato che li collegano (legami). La struttura ad anello del glucosio diventa così un dolce memorabile!",
+              "position": {
+                "x": 0.5,
+                "y": 0.2,
+                "z": -0.8
+              },
+              "isGenerated": true,
+              "createdAt": "2025-01-15T10:00:00.000Z"
+            },
+            {
+              "id": "demo_ann_2",
+              "text": "Legame Covalente",
+              "note": "Due mani che si stringono forte, simbolo di atomi che condividono elettroni. Le dita intrecciate rappresentano la condivisione degli elettroni tra due atomi.",
+              "position": {
+                "x": -0.3,
+                "y": 0.1,
+                "z": 0.9
+              },
+              "isGenerated": true,
+              "createdAt": "2025-01-15T10:00:00.000Z"
+            },
+            {
+              "id": "demo_ann_3",
+              "text": "pH Acido vs Basico",
+              "note": "Un limone giallo (acido, pH basso) e un sapone blu (basico, pH alto) su una bilancia. Il limone è più pesante e scende verso il basso (pH < 7), il sapone è leggero e sale in alto (pH > 7).",
+              "position": {
+                "x": 0.0,
+                "y": -0.4,
+                "z": -0.6
+              },
+              "isGenerated": false,
+              "createdAt": "2025-01-15T10:00:00.000Z"
+            }
+          ]
+        },
+        {
+          "id": "demo_img_2",
+          "name": "Biblioteca",
+          "fileName": "library-360.jpg",
+          "width": 4096,
+          "height": 2048,
+          "is360": true,
+          "annotations": [
+            {
+              "id": "demo_ann_4",
+              "text": "Tavola Periodica - Gruppi",
+              "note": "Immagina una famiglia seduta a tavola: i genitori (metalli alcalini) a sinistra molto reattivi, i nonni (metalli di transizione) al centro stabili e affidabili, gli zii (alogeni) quasi alla fine molto attivi, e i bambini (gas nobili) all'estrema destra che non vogliono giocare con nessuno (inerti).",
+              "position": {
+                "x": -0.7,
+                "y": 0.3,
+                "z": 0.5
+              },
+              "isGenerated": true,
+              "createdAt": "2025-01-15T10:00:00.000Z"
+            },
+            {
+              "id": "demo_ann_5",
+              "text": "Reazione di Combustione",
+              "note": "Un falò con legna (idrocarburi) che brucia con ossigeno dall'aria, producendo fumo nero (CO2) che sale verso il cielo e gocce d'acqua (H2O) che cadono come rugiada. Il calore è il DJ che fa partire la festa chimica!",
+              "position": {
+                "x": 0.4,
+                "y": -0.2,
+                "z": -0.7
+              },
+              "isGenerated": true,
+              "createdAt": "2025-01-15T10:00:00.000Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
