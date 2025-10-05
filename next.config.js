@@ -1,8 +1,11 @@
-// next.config.js
+// next.config.js - VERSIONE CORRETTA PER PWA
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+
+  // ❌ RIMUOVI QUESTA RIGA per PWA:
+  // output: 'standalone',
 
   // Headers per sicurezza e PWA
   async headers() {
@@ -29,7 +32,7 @@ const nextConfig = {
         ],
       },
       {
-        // Cache per il service worker
+        // ✅ IMPORTANTE: Cache per il service worker
         source: '/sw.js',
         headers: [
           {
@@ -39,6 +42,10 @@ const nextConfig = {
           {
             key: 'Content-Type',
             value: 'application/javascript; charset=utf-8',
+          },
+          {
+            key: 'Service-Worker-Allowed',
+            value: '/',
           },
         ],
       },
@@ -69,7 +76,7 @@ const nextConfig = {
     ];
   },
 
-  // Webpack config per evitare warning di dipendenze
+  // Webpack config per evitare warning
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback = {
@@ -87,9 +94,6 @@ const nextConfig = {
     domains: [],
     formats: ['image/avif', 'image/webp'],
   },
-
-  // Output standalone per deployment
-  output: 'standalone',
 };
 
 module.exports = nextConfig;
